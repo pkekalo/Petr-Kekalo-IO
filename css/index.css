@@ -1,0 +1,83 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    margin: 2%;
+    padding: 2%;
+    background-image: url(https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg);
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+}
+#About{
+    background-color: #ffffff59;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#Experience {
+    background-color: #ffffffa1;
+
+}
+
+#Connect {
+    background-color: #ffffff59;
+}
+#Projects_ALL {
+    display: flex;  
+    justify-content: space-between;
+}
+#Projects_1, #Projects_2 {
+    background-color: lightblue;
+    border: solid, black;
+    text-align: center;
+    width: 45%;
+    flex-direction: column;
+    display: flex;
+}
+
+#Projects_2 {
+    background-color: lightgreen;
+}
+
+h2 {
+    text-align: left;
+}
+header {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #555;
+}
+section {
+    padding: 20px;
+}
+footer {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

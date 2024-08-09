@@ -3,6 +3,7 @@
     <html lang="en">  
         <head> 
             <title> Petr Kekalo Portfolio</title>
+            <link rel="icon" type="image/png" sizes="16x16" href="https://cdn0.iconfinder.com/data/icons/emoticon-expression-flat/32/Emoji_Iconset-17-512.png">
             <meta charset="UTF-8" />
             <meta name="keywords" content="HTML, CSS, JavaScript"/>
             <meta name="author" content="Petr Kekalo">
@@ -10,52 +11,16 @@
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
             <style>
                 body {
-                    font-family: 'Bebas Neue', sans-serif;
-                    font-size: 1.5em;
-                    margin: 0;
-                    padding: 0;
-                    background-image: url(https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg);
-                    background-size: cover;
-                }
-                h1 {
-                    text-align: center;
-                }
-                header {
-                    font-family: 'Bebas Neue', sans-serif;
-                    background-color: #333;
-                    color: white;
-                    padding: 10px 0;
-                    text-align: center;
-                }
-                nav {
-                    display: flex;
-                    justify-content: center;
-                    background-color: #444;
-                }
-                nav a {
-                    font-family: 'Bebas Neue', sans-serif;
-                    color: white;
-                    padding: 14px 20px;
-                    text-decoration: none;
-                    text-align: center;
-                }
-                nav a:hover {
-                    background-color: #555;
-                }
-                section {
-                    padding: 20px;
-                }
-                footer {
-                    font-family: 'Bebas Neue', sans-serif;
-                    background-color: #333;
-                    color: white;
-                    text-align: center;
-                    padding: 10px 0;
-                    position: fixed;
-                    width: 100%;
-                    bottom: 0;
+                    background-color: white;
+                    color: black;
+
+                    .social_media {
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             </style>
+        <link rel="stylesheet" href="css/index.css"></link>
         </head>
         <body> 
             <h1>    
@@ -99,46 +64,52 @@
                 <h2>
                     Experience
                 </h2>
-                <h3>
-                    Projects (Responsive Web Design)
-                </h3>
-                <ul>
-                    <li> 
-                        <a href="https://codepen.io/pkekalo/pen/eQBxJB" target="_blank">Personal Portfolio Webpage</a> 
-                    </li>
-                    <li> 
-                        <a href="https://codepen.io/pkekalo/pen/zMGoZr" target="_blank">Product Landing Page</a> 
-                    </li>
-                    <li> 
-                        <a href="https://codepen.io/pkekalo/pen/PxGxbp" target="_blank">Technical Documentation Page</a> 
-                    </li>
-                    <li> 
-                        <a href="https://codepen.io/pkekalo/pen/pddbRd" target="_blank">Tribute Page</a> 
-                    </li>
-                    <li> 
-                        <a href="https://codepen.io/pkekalo/pen/VEJxEE" target="_blank">Survey Form</a> 
-                    </li>
-                </ul>
-                <h3>
-                    Projects (Javascript Algorithms & Data Structures)
-                </h3>
-                <ul>
-                    <li> 
-                        <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Cash Register</a> 
-                    </li>
-                    <li> 
-                        <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Telephone Number Validator</a> 
-                    </li>
-                    <li> 
-                        <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Caesars Cipher</a> 
-                    </li>
-                    <li> 
-                        <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Roman Numeral Converter</a> 
-                    </li>
-                    <li> 
-                        <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Palindrome Checker</a> 
-                    </li>    
-                </ul>
+                <div id="Projects_ALL">
+                    <div id="Projects_1"> 
+                        <h3>
+                            Projects (Responsive Web Design)
+                        </h3>
+                        <ul>
+                            <li> 
+                                <a href="https://codepen.io/pkekalo/pen/eQBxJB" target="_blank">Personal Portfolio Webpage</a> 
+                            </li>
+                            <li> 
+                                <a href="https://codepen.io/pkekalo/pen/zMGoZr" target="_blank">Product Landing Page</a> 
+                            </li>
+                            <li> 
+                                <a href="https://codepen.io/pkekalo/pen/PxGxbp" target="_blank">Technical Documentation Page</a> 
+                            </li>
+                            <li> 
+                                <a href="https://codepen.io/pkekalo/pen/pddbRd" target="_blank">Tribute Page</a> 
+                            </li>
+                            <li> 
+                                <a href="https://codepen.io/pkekalo/pen/VEJxEE" target="_blank">Survey Form</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Projects_2">
+                        <h3>
+                            Projects (Javascript Algorithms & Data Structures)
+                        </h3>
+                        <ul>
+                            <li> 
+                                <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Cash Register</a> 
+                            </li>
+                            <li> 
+                                <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Telephone Number Validator</a> 
+                            </li>
+                            <li> 
+                                <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Caesars Cipher</a> 
+                            </li>
+                            <li> 
+                                <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Roman Numeral Converter</a> 
+                            </li>
+                            <li> 
+                                <a href="https://www.freecodecamp.org/certification/pkekalo/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank">Palindrome Checker</a> 
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
                 <hr />
             </section>
             <section id="Connect">
@@ -146,9 +117,21 @@
                     Connect
                 </h2>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/petr-kekalo-9b0978159" target="_blank">  LinkedIn</a> </li>
-                    <li><a href="https://github.com/pkekalo" target="_blank">  GitHub</a> </li>
-                    <li><a href="https://www.codewars.com/users/pkekalo" target="_blank">  Codewars</a> </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/petr-kekalo-9b0978159" target="_blank"> 
+                             <img class="social_media" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn"> LinkedIn
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="https://github.com/pkekalo" target="_blank"> 
+                             <img class="social_media" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"> GitHub
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="https://www.codewars.com/users/pkekalo" target="_blank"> 
+                             <img class="social_media" src="https://downloads.marketplace.jetbrains.com/files/22542/381805/icon/pluginIcon.png" alt="Codewars"> Codewars
+                        </a> 
+                    </li>
                 </ul>
             </section>
             <footer>   
