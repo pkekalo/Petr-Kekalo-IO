@@ -14,23 +14,27 @@
                     background-color: white;
                     color: black;
 
-                    .social_media {
+                }
+                .social_media {
                         width: 24px;
                         height: 24px;
-                    }
                 }
             </style>
-        <link rel="stylesheet" href="css/index.css"></link>
+        <link rel="stylesheet" href="css/index.css">
         </head>
         <body> 
-            <h1>    
-                Petr Kekalo
-            </h1>
-            <nav>  
-                <a href="#About">About</a>
-                <a href="#Experience">Experience</a>
-                <a href="#Connect">Connect</a>
-            </nav>
+            <header>
+                <h1>    
+                    Petr Kekalo Portfolio
+                </h1>
+                <nav>  
+                    <a href="#About">About</a>
+                    <a href="#Experience">Experience</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Connect">Connect</a>
+                </nav>
+            </header>
             <section id="About">
                 <h2>    
                     About
@@ -47,8 +51,23 @@
                 </p>
                 <hr />
             </section>
-            
+           
             <section id="Experience">
+                <h2 id="Skills">Skills</h2>
+                <ul>   
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>MySQL</li>
+                    <li>GitHub</li>
+                    <li>Git</li>
+                    <li>RESTful APIs</li>
+                    <li>Visual Studio Code</li>
+                    <li>Jest</li>
+                    <li>Mocha</li>
+                </ul>
                 <h2>
                     Certificates
                 </h2>
@@ -64,7 +83,8 @@
                 <h2>
                     Experience
                 </h2>
-                <div id="Projects_ALL">
+                <h2 id="Projects">Projects</h2>
+                <div id="Projects_ALL">   
                     <div id="Projects_1"> 
                         <h3>
                             Projects (Responsive Web Design)
@@ -116,18 +136,18 @@
                 <h2>
                     Connect
                 </h2>
-                <ul>
-                    <li>
+                <ul class="connect">
+                    <li class="column">
                         <a href="https://www.linkedin.com/in/petr-kekalo-9b0978159" target="_blank"> 
                              <img class="social_media" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn"> LinkedIn
                         </a> 
                     </li>
-                    <li>
+                    <li class="column">
                         <a href="https://github.com/pkekalo" target="_blank"> 
                              <img class="social_media" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"> GitHub
                         </a> 
                     </li>
-                    <li>
+                    <li class="column">
                         <a href="https://www.codewars.com/users/pkekalo" target="_blank"> 
                              <img class="social_media" src="https://downloads.marketplace.jetbrains.com/files/22542/381805/icon/pluginIcon.png" alt="Codewars"> Codewars
                         </a> 
