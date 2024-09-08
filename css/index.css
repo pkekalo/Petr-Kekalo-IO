@@ -1,3 +1,5 @@
+/* Default Styles for Desktop */
+
 body {
     background-color: white;
     color: black;
@@ -14,9 +16,6 @@ h1 {
 #About{
     background-color: #ffffff59;
     text-align: center;
-    height: 100%;
-    /* height: 100vh; */
-    width: 100%;
 }
 
 #Experience {
@@ -112,4 +111,34 @@ a:hover {
     background-color: #747c7c;
     border: solid black;
     text-decoration: underline;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        color: darkgreen;
+    }
+
+    #About {
+        background: url(https://images5.alphacoders.com/132/thumb-1920-1327980.png):
+        color: darkred;
+        font-family:'Courier New', Courier, monospace;
+        border: solid black;
+    }
+
+    #Experience{
+        background: url(https://media.istockphoto.com/id/1372488781/vector/wood-texture-vector-brown-wooden-background.jpg?s=612x612&w=0&k=20&c=eXQbrqxBXe4VvXXDFXNv0rsDNMUqvXzWJRi7GTYUWXM=);
+        background-size: cover;
+        color: black;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border: solid black;
+    }
+    
+    #Connect {
+        background: url(https://t4.ftcdn.net/jpg/03/16/36/59/360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg);
+        background-size: cover;
+        color: darkblue;
+        border: solid black;
+    }
 }
