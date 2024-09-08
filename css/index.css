@@ -108,7 +108,7 @@ li a {
 }
 
 a:hover {
-    background-color: #747c7c;
+    background-color: gray;
     border: solid black;
     text-decoration: underline;
 }
@@ -117,12 +117,12 @@ a:hover {
 @media (max-width: 1024px) {
     body {
         font-size: 16px;
-        color: darkgreen;
+        color: black;
     }
 
     #About {
-        background: url(https://images5.alphacoders.com/132/thumb-1920-1327980.png):
-        color: darkred;
+        background-color: rgb(109, 108, 108);
+        color: white;
         font-family:'Courier New', Courier, monospace;
         border: solid black;
     }
@@ -141,4 +141,12 @@ a:hover {
         color: darkblue;
         border: solid black;
     }
+
+    #skills {
+        background: url(https://static.vecteezy.com/system/resources/previews/008/459/776/non_2x/green-natural-organic-grass-background-and-texture-vector.jpg);
+        background-size: cover;
+        color: black;
+        border: solid black;
+    }
 }
+
