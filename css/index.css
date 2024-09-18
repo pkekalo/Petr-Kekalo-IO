@@ -113,6 +113,15 @@ a:hover {
     text-decoration: underline;
 }
 
+body {
+    margin: 0 0 200px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+}
+
 /* Tablet Styles */
 @media (max-width: 1024px) {
     body {
