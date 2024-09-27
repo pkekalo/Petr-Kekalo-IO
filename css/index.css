@@ -1,35 +1,45 @@
 /* Default Styles for Desktop */
 
+/* Sets the body's background, color, font, and layout */
 body {
     background-color: white;
     color: black;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5em;
-    margin: 2%;
-    padding: 2%;
+    font-size: 1.25em;
+    margin: 1%;
+    padding: 1%;
     background-image: url(https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg);
     background-size: cover;
 }
+
+/* Sets heading style and centers it */
 h1 {
     text-align: center;
 }
+
+/* Styles About section with background */
 #About{
     background-color: #ffffff59;
     text-align: center;
 }
 
+/* Sets background for Experience section */
 #Experience {
     background-color: #ffffffa1;
-
 }
 
+/* Styles Connect section with semi-transparent background */
 #Connect {
     background-color: #ffffff59;
 }
+
+/* Uses Flexbox to space out project cards */
 #Projects_ALL {
     display: flex;  
     justify-content: space-between;
 }
+
+/* Sets individual project cards with background and flex direction */
 #Projects_1, #Projects_2, #projects {
     background-color: lightblue;
     border: solid black;
@@ -39,44 +49,59 @@ h1 {
     display: flex;
 }
 
+/* Specific background for second project card */
 #Projects_2 {
     background-color: lightgreen;
 }
 
+/* Sets specific color for third project card */
 #projects {
     background-color: rgb(255, 172, 78);
 }
 
+/* Styles all secondary headings */
 h2 {
     text-align: left;
 }
+
+/* Sticky header with background and padding */
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px 0; 
+    font-size: 1em; 
     text-align: center;
     position: sticky;
     top: 0;
 }
+
+/* Styles navigation with flex layout */
 nav {
     display: flex;
     justify-content: center;
     background-color: #444;
 }
+
+/* Styles navigation links with padding and hover effects */
 nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
 }
+
 nav a:hover {
     background-color: #555;
     border: solid black;
     text-decoration: underline;
 }
+
+/* Adds padding to sections */
 section {
     padding: 20px;
 }
+
+/* Styles footer with fixed positioning */
 footer {
     background-color: #333;
     color: white;
@@ -88,20 +113,21 @@ footer {
     bottom: 0;
 }
 
+/* Flex layout for column sections */
 .column {
     flex: 1;
 }
 
+/* Styles list items with block links */
 li a {
     display: block;
-    
 }
 
+/* Styles Connect section with flexbox and centered items */
 .connect {
     display: flex;
     list-style-type: none;
     border: solid black;
-    
 }
 
 .connect li {
@@ -109,28 +135,83 @@ li a {
     text-align: center;
 }
 
+/* Adds hover effect for anchor links */
 a:hover {
     background-color: gray;
     border: solid black;
     text-decoration: underline;
 }
 
+/* Adds bottom margin for body content */
 body {
     margin: 0 0 200px;
 }
 
+/* Styles text areas with width and height */
 textarea {
     width: 400px;
     height: 200px;
 }
 
-/* Tablet Styles */
+/* Sets scroll margin for sections */
+section, #Projects, #messages {
+    scroll-margin-top: 250px;
+}
+
+/* Adds top margin to Projects section */
+#Projects {
+    margin-top: 100px;
+}
+
+/* Flex layout for Certificates section */
+#Certificates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Flex layout for messages section with spacing */
+#messages {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles individual message items */
+#messages li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Styles the email contact section */
+#emailContactMe {
+    text-align: center;
+    border: solid black;   
+    list-style-type: none;
+}
+
+/* Removes list style from contact list items */
+#emailContactMe li {
+    list-style-type: none;
+}
+
+/* iPad/Tablet Media Query */
 @media (max-width: 1024px) {
+
+    /* Sets larger font size for body text on tablets */
     body {
-        font-size: 16px;
+        font-size: 24px;
         color: black;
     }
 
+    /* Sets background and font for About section */
     #About {
         background-color: rgb(109, 108, 108);
         color: white;
@@ -138,6 +219,7 @@ textarea {
         border: solid black;
     }
 
+    /* Styles Experience section with background image */
     #Experience{
         background: url(https://media.istockphoto.com/id/1372488781/vector/wood-texture-vector-brown-wooden-background.jpg?s=612x612&w=0&k=20&c=eXQbrqxBXe4VvXXDFXNv0rsDNMUqvXzWJRi7GTYUWXM=);
         background-size: cover;
@@ -146,6 +228,7 @@ textarea {
         border: solid black;
     }
     
+    /* Styles Connect section with background and border */
     #Connect {
         background: url(https://t4.ftcdn.net/jpg/03/16/36/59/360_F_316365913_WKVKZW7gzsqqhkx4PgGyu0rArj5GykHK.jpg);
         background-size: cover;
@@ -153,6 +236,7 @@ textarea {
         border: solid black;
     }
 
+    /* Styles skills section with background image and border */
     #skills {
         background: url(https://static.vecteezy.com/system/resources/previews/008/459/776/non_2x/green-natural-organic-grass-background-and-texture-vector.jpg);
         background-size: cover;
@@ -160,9 +244,55 @@ textarea {
         border: solid black;
     }
 
+    /* Adds border to project cards */
     #projects {
         border: 3px solid;
     }
 
-}
+    /* Stacks navigation links vertically on smaller screens */
+    nav {
+        flex-direction: column;
+    }
 
+    /* Hides navigation links by default */
+    nav a {
+        display: none;
+    }
+
+    /* Styles hamburger menu button */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+
+    .hamburger div {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    /* Shows navigation links when hamburger is active */
+    nav.active a {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #444;
+        margin: 10px 0;
+    }
+
+    /* Reduces font size for email contact */
+    #emailContactMe {
+        font-size: 0.5em; 
+    }
+
+    /* Increases font size for certificates section */
+    #Certificates {
+        font-size: 36px; 
+    }
+}
