@@ -115,8 +115,13 @@ a:hover {
     text-decoration: underline;
 }
 
-#About, #Experience, #Connect, #Projects_ALL, #skills {
-    scroll-margin-top: 200px; /* Set to the height of your header */
+body {
+    margin: 0 0 200px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
 }
 
 /* Tablet Styles */

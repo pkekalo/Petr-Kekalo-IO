@@ -36,7 +36,55 @@ for (let i = 0; i < skills.length; i++) {
 
      skillsList.appendChild(skill);
 }
- 
+
+const messageForm = document.forms["leave_message"];
+
+messageForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    console.log("Form submitted!");
+
+    const userName = messageForm.usersName.value;
+    const userEmail = messageForm.usersEmail.value;
+    const userMessage = messageForm.usersMessage.value;
+
+    console.log("Name:", userName);
+    console.log("Email", userEmail);
+    console.log("Message:", userMessage);
+
+    const messageSection = document.getElementById('messages');
+
+    const messageList = messageSection.querySelector('ul');
+
+    const newMessage = document.createElement('li');
+
+    newMessage.innerHTML = `
+        <a href="mailto:${userEmail}">${userName}</a>
+        <span>: ${userMessage}</span>
+    `;
+
+    const removeButton = document.createElement('button');
+
+    removeButton.innerText = "remove";
+
+    removeButton.setAttribute('type', 'button');
+
+    removeButton.addEventListener('click', function() {
+
+        const entry = removeButton.parentNode;
+
+        entry.remove();
+    });
+
+    newMessage.appendChild(removeButton);
+
+    messageList.appendChild(newMessage);
+
+
+
+    messageForm.reset();
+});
+
 const githubUsername = 'pkekalo';
 const url = `https://api.github.com/users/${githubUsername}/repos`;
 
